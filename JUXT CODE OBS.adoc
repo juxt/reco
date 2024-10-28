@@ -33,11 +33,76 @@ This document is intended for users who are setting up OBS Studio for the first 
 
 ==== Step 1: Download and Extract the JUXT OBS Package
 
-Download the JUXT OBS configuration package [link:OBS-JUXT.zip[Download OBS-JUXT.zip]] and extract/unzip it to a convenient location on your system.
+// Use Pages to link this as a direct download in the future!
+Download the JUXT OBS configuration package *link:OBS-JUXT.zip[OBS-JUXT.zip]* and extract/unzip it to a convenient location on your system.
 
 ==== Step 2: Install OBS Studio
 
-Go to this link: https://obsproject.com/ and download the appropriate installer for your operating system. Alternatively, you could also install OBS from your system's "App Store", or via a package manager.
+Go to this *link:https://obsproject.com/[link]* and download the appropriate installer for your operating system. Alternatively, you could also install OBS from your system's "App Store", or via a package manager.
 
 Install OBS Studio following the usual installation process for your system.
 
+==== Step 3: Install the Font
+
+Within the extracted folder, locate the file `InterFace_Trial_Rg.ttf`. To install the font, double-click the file and select **Install**. If your operating system requires a different method to install fonts, follow that method.
+
+==== Step 4: Launch OBS Studio and Initial Setup
+
+Launch OBS Studio. When prompted, select whether you intend to **stream** or **record**. If you are unsure, choose **Recording** for now. Make sure the **Base Canvas Resolution** is set to `1920x1080`. Click **Next** for all other settings.
+
+If you selected to stream, provide your Twitch or other streaming service credentials/keys when prompted. Click **Apply Settings** when finished.
+
+==== Step 5: Import Scene Collection
+
+At the top of the OBS window, click the **Scene Collection** tab. From the dropdown, select **Import**. If prompted to confirm anything, click **Yes**.
+
+Next, in the **Collection Path** column, click the **three dots** and navigate to the folder where you extracted the JUXT OBS package. Select the file `JUXT Scenes.json` and click **Import**.
+
+==== Step 6: Add the JUXT Lua Script
+
+Go to the **Tools** tab at the top of OBS and select **Scripts**. In the bottom left, click the **+** button to add a new script. By default, you'll be taken to the default OBS scripts folder.
+
+Navigate to the extracted JUXT OBS folder and select the file `JUXT Script.lua`. This may cause OBS to crash or freeze, if so just restart it. Regardless, it may also cause pop-ups, please close any that appear. Once OBS is running again, open the **Scripts** menu.
+
+On the right-hand side, you'll see parameters that you can adjust (such as text inputs, dropdown lists, and folder selections).
+
+For the **Folder** parameter, navigate once more to the extracted JUXT OBS folder and select it.
+
+==== Step 7: Adjust Scene Information
+
+Once you have entered all the necessary information in the script parameters, you may want to change which screen is being displayed. To do this:
+
+1. Navigate to the **Screen** scene (Ctrl + 4).
+2. Scroll down the list of sources until you find the "**Record Screen**" for your operating system.
+3. Double-click it to adjust the screen/display you want to record.
+
+==== Step 8: Customize Hotkeys
+
+To customise any hotkeys used in OBS:
+
+1. Go to **Settings** in the bottom-right corner.
+2. Select the **Hotkeys** tab from the menu on the left.
+3. Adjust hotkeys as needed.
+
+The scene collection comes with pre-configured hotkeys for each scene, which you can use while tabbed out of OBS to swap between scenes.
+
+==== Step 9: Audio Mixer Configuration
+
+The OBS audio mixer should automatically use your default system devices. However, if you need to use a different microphone:
+
+1. Select the **Audio Input Source** in sources.
+2. Adjust the microphone input accordingly.
+
+In the **Audio Mixer** panel, you can adjust the volume of each source as needed.
+
+=== Starting Your Recording or Stream
+
+To begin streaming or recording, use the **Start Streaming** or **Start Recording** buttons located on the far right in the **Controls** panel. These can also be assigned to hotkeys.
+
+=== Further Assistance
+
+If you encounter any issues with the installation or have further questions, please contact @bcs on Slack.
+
+== Next Steps
+
+With OBS setup, you can customise it as needed for your streaming and recording requirements.
