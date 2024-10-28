@@ -1,6 +1,6 @@
 = OBS Installation Instructions
 Benjamin Shearlock <bcs@juxt.pro>
-v1.0, 2024-10-25
+v1.0, 2024-10-28
 :status: WORKING RECOMMENDATION
 :classification: INTERNAL
 :reader-nickname: User
@@ -27,13 +27,13 @@ This document is intended for users who are setting up OBS Studio for the first 
 === Requirements
 
 * OBS Studio Installer
-* JUXT OBS configuration package (available for download)
+* JUXT OBS configuration package (JUXT-OBS.zip)
 
 === OBS Installation and Setup
 
 ==== Step 1: Download and Extract the JUXT OBS Package
 
-Download the JUXT OBS configuration package [a link to a direct download to a folder that will be set up later] and extract/unzip it to a convenient location on your system.
+Download the JUXT OBS configuration package [link:OBS-JUXT.zip[Download OBS-JUXT.zip]] and extract/unzip it to a convenient location on your system.
 
 ==== Step 2: Install OBS Studio
 
