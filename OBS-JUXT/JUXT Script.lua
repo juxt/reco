@@ -174,18 +174,18 @@ function script_properties()
     -- Main Title
     obs.obs_properties_add_text(props, "titleInput", "Title", obs.OBS_TEXT_MULTILINE)
 
-    -- Add size dropdown list for Title (200 to 350, increments of 25)
+    -- Add size dropdown list for Title (150 to 350, increments of 25)
     local titleSizeDropdown = obs.obs_properties_add_list(props, "titleSizeDropdown", "Title Font Size", obs.OBS_COMBO_TYPE_LIST, obs.OBS_COMBO_FORMAT_INT)
-    for i = 200, 350, 25 do
+    for i = 150, 350, 25 do
         obs.obs_property_list_add_int(titleSizeDropdown, tostring(i), i)
     end
 
     -- Subtitle
     obs.obs_properties_add_text(props, "subtitleInput", "Subtitle", obs.OBS_TEXT_MULTILINE)
 
-    -- Add size dropdown list for Subtitle (200 to 350, increments of 25)
+    -- Add size dropdown list for Subtitle (150 to 350, increments of 25)
     local subtitleDropdown = obs.obs_properties_add_list(props, "subtitleDropdown", "Subtitle Font Size", obs.OBS_COMBO_TYPE_LIST, obs.OBS_COMBO_FORMAT_INT)
-    for i = 200, 350, 25 do
+    for i = 150, 350, 25 do
         obs.obs_property_list_add_int(subtitleDropdown, tostring(i), i)
     end
 
@@ -195,9 +195,9 @@ function script_properties()
     -- Job Title
     obs.obs_properties_add_text(props, "jobTitleInput", "Job Title", obs.OBS_TEXT_DEFAULT)
 
-    -- Add size dropdown list for Name and Job Title (linked) (200 to 350, increments of 25)
+    -- Add size dropdown list for Name and Job Title (linked) (150 to 350, increments of 25)
     local nameJobTitleDropdown = obs.obs_properties_add_list(props, "nameJobTitleDropdown", "Name/Job Title Font Size", obs.OBS_COMBO_TYPE_LIST, obs.OBS_COMBO_FORMAT_INT)
-    for i = 200, 350, 25 do
+    for i = 150, 350, 25 do
         obs.obs_property_list_add_int(nameJobTitleDropdown, tostring(i), i)
     end
 
