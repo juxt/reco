@@ -34,7 +34,7 @@ This document is intended for users who are setting up OBS Studio for the first 
 ==== Step 1: Download and Extract the JUXT OBS Package
 
 // Use Pages to link this as a direct download in the future!
-Download the JUXT OBS configuration package *link:https://juxt.github.io/reco/OBS-JUXT.zip[OBS-JUXT.zip]* and extract/unzip it to a convenient location on your system.
+Download the JUXT OBS zipped configuration package *link:https://juxt.github.io/reco/OBS-JUXT.zip[OBS-JUXT.zip]* and extract/unzip it to a convenient location on your system. Alternatively, you can just **Clone** this repository and navigate to the `OBS-JUXT` folder within it.
 
 ==== Step 2: Install OBS Studio
 
@@ -44,7 +44,7 @@ Install OBS Studio following the usual installation process for your system.
 
 ==== Step 3: Install the Font
 
-Within the extracted folder, locate the file `InterFace_Trial_Rg.ttf`. To install the font, double-click the file and select **Install**. If your operating system requires a different method to install fonts, follow that method.
+Within the extracted folder, locate the file `InterFace_Trial_Rg.ttf`. To install the font, double-click the file and select **Install**. If your operating system requires a different method to install fonts, follow that method. This is to ensure that there is a consistent font that can work across all operating systems.
 
 ==== Step 4: Launch OBS Studio and Initial Setup
 
@@ -64,7 +64,7 @@ Next, in the **Collection Path** column, click the **three dots** and navigate t
 
 Go to the **Tools** tab at the top of OBS and select **Scripts**. In the bottom left, click the **+** button to add a new script. By default, you'll be taken to the default OBS scripts folder.
 
-Navigate to the extracted JUXT OBS folder and select the file `JUXT Script.lua`. It may cause some pop-ups to appear, please close any that do.
+Navigate to the extracted JUXT OBS folder and select the file `JUXT Script.lua`. It may cause some **pop-ups** to appear, please **close/click cancel** on any that do.
 
 NOTE: It may also cause OBS to crash or freeze, if so just restart it. Once OBS is running again, open the **Scripts** menu.
 
@@ -79,6 +79,17 @@ Once you have entered all the necessary information in the script parameters, yo
 1. Navigate to the **Screen** scene (Ctrl + 4).
 2. Scroll down the list of sources until you find the "**Record Screen**" for your operating system.
 3. Double-click it to adjust the screen/display you want to record.
+
+If you find that none of these screens are intractable within your OBS, you may need to add a new screen capturing source. If not, **skip** this section. To do this:
+
+1. Click the **+** button in the **Sources** panel.
+2. Select the **Screen Capture** option.
+3. Name the source and click **OK**. 
+4. A pop-up will appear, select the screen you want to capture and click **OK**.
+5. Depending on your screen size/resolution, you may see your screen being too large to fit in the scene. Since you should have the screen source still selected, press **Ctrl + S** to resize the screen to fit the scene.
+6. At the bottom of sources, you'll see arrows to move the source up and down. Press repeatedly on the **down** arrow until the newly created screen source is at the bottom of the list.
+7. Right-click the the newly created screen source and select **Copy**. Then navigate to the **Both** scene, right-click and select **Paste (Reference)** - this can also all be done using keyboard commands for copy & paste. 
+8. Finally, refer to **Part 6** to ensure that the pasted screen source is at the bottom of the list in the **Both** scene.
 
 ==== Step 8: Customize Hotkeys
 
@@ -98,6 +109,8 @@ The OBS audio mixer should automatically use your default system devices. Howeve
 2. Adjust the microphone input accordingly.
 
 In the **Audio Mixer** panel, you can adjust the volume of each source as needed.
+
+NOTE: Your microphone and computer audio will **NOT** be recorded when you are using the **Intro** and **Outro** scenes.
 
 === Starting Your Recording or Stream
 
