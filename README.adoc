@@ -80,7 +80,7 @@ Once you have entered all the necessary information in the script parameters, yo
 2. Scroll down the list of sources until you find the "**Record Screen**" for your operating system.
 3. Double-click it to adjust the screen/display you want to record.
 
-If you find that none of these screens are intractable within your OBS, you may need to add a new screen capturing source. If not, **skip** this section. To do this:
+If you find that **NONE** of these screens are interactable within your OBS, you may need to add a new screen capturing source. If not, **skip** this section. To do this:
 
 1. Click the **+** button in the **Sources** panel.
 2. Select the **Screen Capture** option.
